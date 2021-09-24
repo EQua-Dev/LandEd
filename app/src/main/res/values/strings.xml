@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">LandEd</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up_intro_note">First Time?</string>
+    <string name="sign_up_first_name">Username</string>
+    <string name="sign_up_email">Email</string>
+    <string name="sign_up_password">Password</string>
+    <string name="sign_up_confirm_password">Confirm Password</string>
+    <string name="sign_up_button_sign_up">Sign Up</string>
+    <string name="occupation_select">Occupation</string>
+    <string name="log_in_instead">Already a user? Login Instead</string>
+    <string name="logo_image">Logo Image</string>
+    <string name="log_in_welcome_note">Welcome Back</string>
+    <string name="log_in_password">Password</string>
+    <string name="log_in_button_confirm">Log In</string>
+    <string name="sign_up_text">Create New Account</string>
+    <string name="log_in_forgot_password">Forgot Password?</string>
+    <string name="text_enter_email_for_password_reset">Enter Your Registered Email</string>
+    <string name="text_reset_password">Reset Password</string>
+    <string name="splash_description">splash image</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string-array name="occupation">
+        <item>Banker</item>
+        <item>Accountant</item>
+        <item>Business Man</item>
+        <item>Doctor</item>
+        <item>Realtor</item>
+        <item>Engineer</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_purchases">My Purchases</string>
+    <string name="menu_urp">Regional Planning</string>
+    <string name="menu_utilities">Utilities</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Log out</string>
+
+    <string name="title_activity_landing">Landing</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="custom_cancel_button">Cancel</string>
+    <string name="custom_contact_agent_button">Contact Agent</string>
+    <string name="custom_pay_button">Make Payment</string>
+    <string name="custom_agent_name_Label">Agent</string>
+    <string name="custom_price_Label">Price:</string>
+    <string name="owned_lands">Owned Lands</string>
+    <string name="profile_item_purchase_date">Purchase Date</string>
+    <string name="custom_location_name_Label">Location</string>
+
+</resources>

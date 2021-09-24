@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "134350000771",
+    "project_id": "land-3cda6",
+    "storage_bucket": "land-3cda6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134350000771:android:2cfc88e5785c7913e981b6",
+        "android_client_info": {
+          "package_name": "com.androidstrike.landed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134350000771-7pcr14jtqtldvloaifjlcnetp4m62nks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx-RaBX3FBPAHnrvh1A2ZDXUIdzrEgN-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134350000771-7pcr14jtqtldvloaifjlcnetp4m62nks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
