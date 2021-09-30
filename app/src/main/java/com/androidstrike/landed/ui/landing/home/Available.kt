@@ -151,7 +151,7 @@ class Available : Fragment() {
         landName: String,
         landArea: String,
         landLocation: String,
-        landPrice: Double,
+        landPrice: Int,
         nameOfAgent: String,
         documentId: String?
     ) {

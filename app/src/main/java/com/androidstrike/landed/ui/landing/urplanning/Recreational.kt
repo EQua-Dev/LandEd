@@ -135,7 +135,7 @@ class Recreational : Fragment() {
 
             }
 
-        rv_home_available.adapter = recreationalLandAdapter
+        rv_recreational_land.adapter = recreationalLandAdapter
 
     }
 
@@ -144,7 +144,7 @@ class Recreational : Fragment() {
         landName: String,
         landArea: String,
         landLocation: String,
-        landPrice: Double,
+        landPrice: Int,
         nameOfAgent: String,
         documentId: String?
     ) {

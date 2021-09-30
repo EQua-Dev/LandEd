@@ -11,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 //import com.androidstrike.bias.model.User
@@ -19,6 +20,7 @@ import com.androidstrike.landed.utils.Common
 import com.androidstrike.landed.utils.toast
 import com.androidstrike.landed.R
 import com.androidstrike.landed.ui.Landing
+import com.androidstrike.landed.utils.visible
 import com.google.firebase.auth.FirebaseUser
 import com.rengwuxian.materialedittext.MaterialEditText
 import kotlinx.coroutines.CoroutineScope
@@ -38,7 +40,7 @@ class SignIn : Fragment() {
     lateinit var btnRegister: Button
     lateinit var etEmail: MaterialEditText
     lateinit var etPassword: MaterialEditText
-//    lateinit var pbLoading: LinearLayout
+    lateinit var pbLoading: ProgressBar
 
 
 
@@ -61,7 +63,7 @@ class SignIn : Fragment() {
         etPassword = view.findViewById(R.id.log_in_password)
         txtSignUp = view.findViewById(R.id.login_tv_signup)
         txtForgotPassword = view.findViewById(R.id.login_forgot_password)
-//        pbLoading = view.findViewById(R.id.pb_sign_in)
+        pbLoading = view.findViewById(R.id.pb_sign_in)
 
         //display user name if user has previously used app on device
         if (isFirstTime())
@@ -100,7 +102,7 @@ class SignIn : Fragment() {
 
     private fun signIn(email: String, password: String) {
         //implement sign in method
-//        pbLoading.visibility = View.VISIBLE
+        pbLoading.visible(true)
         email.let { Common.mAuth.signInWithEmailAndPassword(it, password) }
             .addOnCompleteListener { it ->
                 if (it.isSuccessful) {
@@ -115,7 +117,7 @@ class SignIn : Fragment() {
 //                            }
                             Log.d("Equa", "signIn: ${Common.userOccupation}")
                             withContext(Dispatchers.Main){
-//                                pbLoading.visibility = View.GONE
+                                pbLoading.visible(false)
                                 val i = Intent(requireContext(), Landing::class.java)
                                 startActivity(i)
 //                                findNavController().navigate(R.id.action_signIn_to_landing)
@@ -124,7 +126,7 @@ class SignIn : Fragment() {
 
                         } catch (e: Exception) {
                             withContext(Dispatchers.Main) {
-//                                pbLoading.visibility = View.GONE
+                                pbLoading.visible(false)
                                 activity?.toast(e.message.toString())
                                 Log.d("Equa", "signIn: ${e.message.toString()}")
                             }
@@ -133,6 +135,7 @@ class SignIn : Fragment() {
 
 //                    Common.currentUser = firebaseUser?.uid!!
                 } else {
+                    pbLoading.visible(false)
                     activity?.toast(it.exception?.message.toString())
                 }
             }

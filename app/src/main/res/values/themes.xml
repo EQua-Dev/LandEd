@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.LandEd" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/skyblue</item>
+        <item name="colorPrimaryVariant">@color/deepskyblue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -17,8 +17,8 @@
 
     <style name="SplashScreenTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/skyblue</item>
+        <item name="colorPrimaryVariant">@color/deepskyblue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -37,4 +37,11 @@
     <style name="Theme.LandEd.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.LandEd.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+    <style name="RobotoButtonStyle" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
 </resources>

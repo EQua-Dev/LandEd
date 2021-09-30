@@ -26,7 +26,6 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.fragment_available.*
 import kotlinx.android.synthetic.main.fragment_farming.*
-import kotlinx.android.synthetic.main.fragment_residential.*
 import java.lang.StringBuilder
 import java.text.NumberFormat
 import java.util.*
@@ -137,7 +136,7 @@ class Farming : Fragment() {
 
             }
 
-        rv_home_available.adapter = farmingLandAdapter
+        rv_farming_land.adapter = farmingLandAdapter
 
     }
 
@@ -146,7 +145,7 @@ class Farming : Fragment() {
         landName: String,
         landArea: String,
         landLocation: String,
-        landPrice: Double,
+        landPrice: Int,
         nameOfAgent: String,
         documentId: String?
     ) {

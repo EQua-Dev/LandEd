@@ -7,15 +7,18 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_baseline_home"
+            android:iconTint="@color/black"
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_baseline_person"
+            android:iconTint="@color/black"
             android:title="@string/menu_profile" />
 
         <item
             android:id="@+id/nav_urp"
             android:icon="@drawable/ic_baseline_urp"
+            android:iconTint="@color/black"
             android:title="@string/menu_urp" />
     </group>
 
@@ -25,11 +28,13 @@
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_baseline_settings"
+                android:iconTint="@color/black"
                 android:title="@string/menu_settings" />
 
             <item
                 android:id="@+id/nav_logout"
                 android:icon="@drawable/ic_baseline_logout"
+                android:iconTint="@color/black"
                 android:title="@string/menu_logout" />
         </menu>
 

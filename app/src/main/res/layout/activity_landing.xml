@@ -41,7 +41,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/silver"
         app:itemTextColor="@color/black"
         app:itemIconTint="@color/white"
         app:headerLayout="@layout/nav_header_landing"

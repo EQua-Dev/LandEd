@@ -136,7 +136,7 @@ class Office : Fragment() {
 
             }
 
-        rv_home_available.adapter = officeLandAdapter
+        rv_office_land.adapter = officeLandAdapter
 
     }
 
@@ -145,7 +145,7 @@ class Office : Fragment() {
         landName: String,
         landArea: String,
         landLocation: String,
-        landPrice: Double,
+        landPrice: Int,
         nameOfAgent: String,
         documentId: String?
     ) {

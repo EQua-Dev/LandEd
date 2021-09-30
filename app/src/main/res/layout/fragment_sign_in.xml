@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/auth_bg"
+    android:background="@drawable/auth_inner_bg"
     tools:context=".ui.auth.SignIn">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_above="@id/layout_login_details"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/logo_image"
@@ -74,6 +74,7 @@
                     style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/whitesmoke"
                     android:text="@string/log_in_button_confirm" />
 
                 <TextView
@@ -99,5 +100,11 @@
 
     </LinearLayout>
 
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/pb_sign_in"
+        android:visibility="invisible"/>
 
 </RelativeLayout>

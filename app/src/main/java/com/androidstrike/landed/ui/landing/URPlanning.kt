@@ -29,11 +29,11 @@ class URPlanning : Fragment() {
         tabLayout = view.findViewById(R.id.tab_urp_title)!!
         viewPager = view.findViewById(R.id.urp_view_pager)!!
 
-        tabLayout.addTab(tabLayout.newTab().setText("Farming"))
-        tabLayout.addTab(tabLayout.newTab().setText("Residential Building"))
-        tabLayout.addTab(tabLayout.newTab().setText("Office Complex"))
-        tabLayout.addTab(tabLayout.newTab().setText("Recreational Centre"))
-        tabLayout.addTab(tabLayout.newTab().setText("Business Complex"))
+        tabLayout.addTab(tabLayout.newTab().setText("Farms"))
+        tabLayout.addTab(tabLayout.newTab().setText("Homes"))
+        tabLayout.addTab(tabLayout.newTab().setText("Office"))
+        tabLayout.addTab(tabLayout.newTab().setText("Hotels"))
+        tabLayout.addTab(tabLayout.newTab().setText("Schools"))
 
         tabLayout.tabGravity = TabLayout.GRAVITY_FILL
 
